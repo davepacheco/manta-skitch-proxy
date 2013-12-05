@@ -7,6 +7,11 @@ var restify = require('restify');
 var log, server, client;
 var base = process.argv[2];
 
+if (!base) {
+	console.error('usage: node skitch-proxy.js BASE');
+	process.exit(2);
+}
+
 log = new bunyan({ 'name': 'skitch-proxy' });
 server = restify.createServer();
 server.use(restify.acceptParser(server.acceptable));
