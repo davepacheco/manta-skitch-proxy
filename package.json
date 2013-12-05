@@ -1,0 +1,14 @@
+{
+	"name": "manta-skitch-proxy",
+	"description": "Proxy for accepting skitch images and uploading to Manta",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/davepacheco/manta-skitch-proxy.git"
+	},
+	"dependencies": {
+		"bunyan": "0.22.1",
+		"manta": "1.2.2",
+		"restify": "2.6.0"
+	}
+}
